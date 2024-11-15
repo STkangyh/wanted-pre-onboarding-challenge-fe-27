@@ -22,6 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 .yarn/*
 !.yarn/cache
@@ -30,3 +31,5 @@ dist-ssr
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+=======
+>>>>>>> 5e4c808a492c27846ae0aeee7f4f24cca820f92f
