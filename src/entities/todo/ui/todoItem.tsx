@@ -1,5 +1,6 @@
-import { TodoItemModel } from "../model/todo";
+import React from "react";
 
+import { TodoItemModel } from "../model/todo";
 interface TodoItemProps {
   todo: TodoItemModel;
   onDelete: (id: string) => void;
@@ -11,8 +12,9 @@ export function TodoItem({ todo, onDelete }: TodoItemProps) {
   const { title, content, createdAt, updatedAt } = todo;
 
   return (
-    <li className="group hover:shadow-lg transition-all duration-200 bg-white rounded-lg border border-gray-200">
-      <div className="p-6">
+    <>
+      <li className="group hover:shadow-lg transition-all duration-200 bg-white rounded-lg border border-gray-200">
+        <div className="p-6">
         {/* 헤더 영역 */}
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
@@ -63,5 +65,6 @@ export function TodoItem({ todo, onDelete }: TodoItemProps) {
         </div>
       </div>
     </li>
+    </>
   );
 }
